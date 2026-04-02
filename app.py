@@ -5,7 +5,7 @@ import pandas as pd
 
 # 1. 페이지 기본 설정
 st.set_page_config(page_title="안전 법령 모니터링 PRO", layout="wide")
-st.title("🛡️ 안전관리자 법령 모니터링 & 개정확인")
+st.title("🛡️ 안전관계 법령 모니터링 & 개정확인")
 
 # 2. 현재 접속 IP 확인 (법제처 등록 확인용)
 try:
@@ -17,7 +17,7 @@ st.sidebar.info(f"📍 현재 서버 IP: {current_ip}")
 
 # 3. 설정 및 키워드 입력
 my_oc = "soosafety2026" 
-keywords = st.sidebar.text_area("모니터링 키워드", value="산업안전보건법, 중대재해, 소방시설, 건설기술")
+keywords = st.sidebar.text_area("모니터링 키워드", value="산업안전보건법, 중대재해, 소방시설, 건설기술, 위험물, 화학물질")
 search_btn = st.sidebar.button("최신 개정사항 확인")
 
 # 4. 데이터 추출 도우미 함수
